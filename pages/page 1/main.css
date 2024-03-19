@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+.navbar-collapse {
+    flex-grow: 0;
+    justify-content: space-between;
+}
+
+.conttainer {
+    padding: 22px 0;
+}
+
+.HIDE {
+    display: none;
+}
+
+
+
+header .LOGO LI {
+    margin: 0 8PX;
+}
+
+.change-lang a {
+    text-decoration: none;
+}
+
+#navbarNav ul li a::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #367213a4;
+    position: absolute;
+    top: 80%;
+    transition: 0.3s;
+}
+
+#navbarNav ul li a:hover:before {
+    width: 3%;
+}
+
+.change-lang a {
+    font-family: "Poppins", sans-serif;
+}
+
+/* ---------------End Header Style---------------------------- */
+main .containerr {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+main .containerr section {
+    flex-basis: 70%;
+    padding: 32px 16px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+main .containerr aside {
+    flex-basis: 25%;
+    padding: 32px 16px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+}
+
+main .containerr section h1 {
+    font-size: 28px;
+    position: relative;
+    padding-right: 8px;
+
+}
+.title{
+    border-right: 3px solid #000;
+    border-radius: 3px;
+}
+
+
+
+main .containerr section .lesson-content {
+    margin-top: 64px;
+
+}
+
+
+
+main .containerr section .lesson-content iframe {
+    min-width: 100%;
+}
+aside h3{
+    padding-bottom: 12px;
+}
+ol li {
+    list-style-position: inside;
+    margin-right: 16px;
+    margin-top: 16px;
+}
+ol li a{
+    color: #000000d8;
+    font-size: 14px;
+
+}
+h2{
+    margin-right:6px;
+    margin-bottom: 16px;
+    font-size: 26px;
+    font-weight: 600;
+}
+.lesson-content h3{
+    margin-right:6px;
+    margin-bottom: 16px;
+    margin-top: 42px;
+}
+p{
+    font-size: 17px;
+    margin-right: 16px;
+    line-height: 1.6;
+    margin-top: 22px;
+}
+.bold p{
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+ul{
+    margin-right: 16px;
+    margin-bottom: 22px;
+}
+ul li {
+    list-style-position: inside;
+    margin-right: 22px;
+    margin-bottom: 8px;
+    font-size:16px ;
+}
+h6{
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 16px;
+    margin-top: 32px;
+}
+.content-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.content-img .IMG{
+    flex-basis: 30%;
+}
+.content-img .IMG img{
+    max-width: 100%;
+}
+
+.first-point{
+    margin-bottom: 64px;
+}
+.content-cid{
+    margin-top: 32px;
+}
+.content-cid h2{
+    text-align: center;
+}
+.content-cid iframe{
+    max-width: 100%;
+}
+
+
+/* --------------------Media-------------------- */
+@media (max-width:1024px) {
+    main .containerr {
+        width: 95%;
+    }
+    main .containerr section {
+        flex-basis: 69%;
+        padding: 32px 16px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+    
+    main .containerr aside {
+        flex-basis: 30%;
+        padding: 32px 16px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    
+    }
+
+    ol li a{
+        color: #000000d8;
+        text-decoration: none;
+    }
+}
+@media (max-width:992px) {
+    .HIDE {
+        display: list-item;
+    }
+
+    .HIDE2 {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .tap-img {
+        display: unset;
+    }
+
+    .pc {
+        display: none;
+    }
+    main .containerr {
+        width: 95%;
+    }
+
+    main .containerr {
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: stretch;
+    
+    }
+    main .containerr aside {
+
+        margin-bottom: 16px;
+    }
+}
+@media (max-width:430px) {
+    main .containerr {
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: stretch;
+    
+    }
+    main .containerr section h1::before {
+        height: 40px;
+        transform: translate(242%,-7%);
+
+    }
+    main .containerr aside {
+        flex-basis: 25%;
+        padding: 32px 16px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        margin-bottom: 16px;
+    }
+    main .containerr section h1 {
+        font-size: 22px;
+
+    
+    }
+}
